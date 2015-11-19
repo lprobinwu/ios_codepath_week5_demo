@@ -14,6 +14,11 @@
 		835E06AC1BFD9AD0006A83EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835E06AB1BFD9AD0006A83EC /* Assets.xcassets */; };
 		835E06AF1BFD9AD0006A83EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835E06AD1BFD9AD0006A83EC /* LaunchScreen.storyboard */; };
 		835E06BB1BFDA3C7006A83EC /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E06BA1BFDA3C7006A83EC /* ProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		835E06BD1BFDA4A8006A83EC /* MyCustomNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E06BC1BFDA4A8006A83EC /* MyCustomNib.xib */; settings = {ASSET_TAGS = (); }; };
+		835E06C11BFDB075006A83EC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E06BF1BFDB075006A83EC /* FirstViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835E06C21BFDB075006A83EC /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E06C01BFDB075006A83EC /* FirstViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		835E06C51BFDB335006A83EC /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E06C41BFDB335006A83EC /* ProfileHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		835E06C71BFDB35E006A83EC /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E06C61BFDB35E006A83EC /* ProfileHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,13 @@
 		835E06B01BFD9AD0006A83EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835E06B91BFDA3C7006A83EC /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
 		835E06BA1BFDA3C7006A83EC /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		835E06BC1BFDA4A8006A83EC /* MyCustomNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomNib.xib; sourceTree = "<group>"; };
+		835E06BE1BFDB075006A83EC /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		835E06BF1BFDB075006A83EC /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		835E06C01BFDB075006A83EC /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		835E06C31BFDB335006A83EC /* ProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
+		835E06C41BFDB335006A83EC /* ProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
+		835E06C61BFDB35E006A83EC /* ProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,13 @@
 				835E06AD1BFD9AD0006A83EC /* LaunchScreen.storyboard */,
 				835E06B01BFD9AD0006A83EC /* Info.plist */,
 				835E069F1BFD9AD0006A83EC /* Supporting Files */,
+				835E06BC1BFDA4A8006A83EC /* MyCustomNib.xib */,
+				835E06BE1BFDB075006A83EC /* FirstViewController.h */,
+				835E06BF1BFDB075006A83EC /* FirstViewController.m */,
+				835E06C01BFDB075006A83EC /* FirstViewController.xib */,
+				835E06C31BFDB335006A83EC /* ProfileHeaderView.h */,
+				835E06C41BFDB335006A83EC /* ProfileHeaderView.m */,
+				835E06C61BFDB35E006A83EC /* ProfileHeaderView.xib */,
 			);
 			path = CodePathWeek5Demo;
 			sourceTree = "<group>";
@@ -143,7 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				835E06AF1BFD9AD0006A83EC /* LaunchScreen.storyboard in Resources */,
+				835E06C71BFDB35E006A83EC /* ProfileHeaderView.xib in Resources */,
+				835E06C21BFDB075006A83EC /* FirstViewController.xib in Resources */,
 				835E06AC1BFD9AD0006A83EC /* Assets.xcassets in Resources */,
+				835E06BD1BFDA4A8006A83EC /* MyCustomNib.xib in Resources */,
 				835E06AA1BFD9AD0006A83EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				835E06A71BFD9AD0006A83EC /* ViewController.m in Sources */,
+				835E06C51BFDB335006A83EC /* ProfileHeaderView.m in Sources */,
 				835E06BB1BFDA3C7006A83EC /* ProgressView.m in Sources */,
+				835E06C11BFDB075006A83EC /* FirstViewController.m in Sources */,
 				835E06A41BFD9AD0006A83EC /* AppDelegate.m in Sources */,
 				835E06A11BFD9AD0006A83EC /* main.m in Sources */,
 			);
