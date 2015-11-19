@@ -11,6 +11,8 @@
 
 @interface FirstViewController () <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 
+@property (nonatomic, assign) BOOL isPresenting;
+
 @end
 
 @implementation FirstViewController
@@ -36,10 +38,12 @@
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.isPresenting = YES;
     return self;
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.isPresenting = NO;
     return self;
 }
 
@@ -57,14 +61,24 @@
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
 
-    [containerView addSubview:toViewController.view];
-    toViewController.view.alpha = 0;
-    
-    [UIView animateWithDuration:3 animations:^{
-        toViewController.view.alpha = 1;
-    } completion:^(BOOL finished) {
-        [transitionContext completeTransition:YES];
-    }];
+    if (self.isPresenting) {
+        [containerView addSubview:toViewController.view];
+        toViewController.view.alpha = 0;
+        
+        [UIView animateWithDuration:3 animations:^{
+            toViewController.view.alpha = 1;
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:YES];
+        }];
+    } else {
+        [UIView animateWithDuration:3 animations:^{
+            fromViewController.view.alpha = 0;
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:YES];
+            [fromViewController.view removeFromSuperview];
+        }];
+        
+    }
 }
 
 
