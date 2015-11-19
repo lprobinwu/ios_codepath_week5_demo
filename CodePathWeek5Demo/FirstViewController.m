@@ -65,14 +65,18 @@
         [containerView addSubview:toViewController.view];
         toViewController.view.alpha = 0;
         
+        toViewController.view.transform = CGAffineTransformMakeScale(0, 0);
+        
         [UIView animateWithDuration:3 animations:^{
             toViewController.view.alpha = 1;
+            toViewController.view.transform = CGAffineTransformMakeScale(0.9, 0.9);
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
         }];
     } else {
         [UIView animateWithDuration:3 animations:^{
             fromViewController.view.alpha = 0;
+            fromViewController.view.transform = CGAffineTransformMakeScale(0.001, 0.001);
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
             [fromViewController.view removeFromSuperview];
