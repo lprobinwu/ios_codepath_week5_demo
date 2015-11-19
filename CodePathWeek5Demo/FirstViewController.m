@@ -7,8 +7,9 @@
 //
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
 
-@interface FirstViewController ()
+@interface FirstViewController () <UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning>
 
 @end
 
@@ -23,6 +24,49 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)onPinkButton:(id)sender {
+    SecondViewController *vc = [[SecondViewController alloc]init];
+    
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.transitioningDelegate = self;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return self;
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return self;
+}
+
+//- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator;
+//
+//- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator;
+
+- (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext {
+    return 3;
+}
+
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+    UIView *containerView = [transitionContext containerView];
+    
+    UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+
+    [containerView addSubview:toViewController.view];
+    toViewController.view.alpha = 0;
+    
+    [UIView animateWithDuration:3 animations:^{
+        toViewController.view.alpha = 1;
+    } completion:^(BOOL finished) {
+        [transitionContext completeTransition:YES];
+    }];
+}
+
 
 /*
 #pragma mark - Navigation

@@ -19,6 +19,8 @@
 		835E06C21BFDB075006A83EC /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E06C01BFDB075006A83EC /* FirstViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		835E06C51BFDB335006A83EC /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E06C41BFDB335006A83EC /* ProfileHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		835E06C71BFDB35E006A83EC /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E06C61BFDB35E006A83EC /* ProfileHeaderView.xib */; settings = {ASSET_TAGS = (); }; };
+		835E06CB1BFDBC89006A83EC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E06C91BFDBC89006A83EC /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
+		835E06CC1BFDBC89006A83EC /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E06CA1BFDBC89006A83EC /* SecondViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,9 @@
 		835E06C31BFDB335006A83EC /* ProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
 		835E06C41BFDB335006A83EC /* ProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		835E06C61BFDB35E006A83EC /* ProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		835E06C81BFDBC89006A83EC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		835E06C91BFDBC89006A83EC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		835E06CA1BFDBC89006A83EC /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,9 @@
 				835E06C31BFDB335006A83EC /* ProfileHeaderView.h */,
 				835E06C41BFDB335006A83EC /* ProfileHeaderView.m */,
 				835E06C61BFDB35E006A83EC /* ProfileHeaderView.xib */,
+				835E06C81BFDBC89006A83EC /* SecondViewController.h */,
+				835E06C91BFDBC89006A83EC /* SecondViewController.m */,
+				835E06CA1BFDBC89006A83EC /* SecondViewController.xib */,
 			);
 			path = CodePathWeek5Demo;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				835E06AF1BFD9AD0006A83EC /* LaunchScreen.storyboard in Resources */,
+				835E06CC1BFDBC89006A83EC /* SecondViewController.xib in Resources */,
 				835E06C71BFDB35E006A83EC /* ProfileHeaderView.xib in Resources */,
 				835E06C21BFDB075006A83EC /* FirstViewController.xib in Resources */,
 				835E06AC1BFD9AD0006A83EC /* Assets.xcassets in Resources */,
@@ -180,6 +189,7 @@
 				835E06A71BFD9AD0006A83EC /* ViewController.m in Sources */,
 				835E06C51BFDB335006A83EC /* ProfileHeaderView.m in Sources */,
 				835E06BB1BFDA3C7006A83EC /* ProgressView.m in Sources */,
+				835E06CB1BFDBC89006A83EC /* SecondViewController.m in Sources */,
 				835E06C11BFDB075006A83EC /* FirstViewController.m in Sources */,
 				835E06A41BFD9AD0006A83EC /* AppDelegate.m in Sources */,
 				835E06A11BFD9AD0006A83EC /* main.m in Sources */,
